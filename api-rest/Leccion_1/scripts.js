@@ -9,7 +9,11 @@ function personaje(texto) {
     var tdName = document.createElement('td');    
 
     tdUrl.style.border = '1px solid #000';
+    tdUrl.style.backgroundColor = '#ff6961'
+
     tdName.style.border = '1px solid #000';
+    tdName.style.backgroundColor = '#00aae4'
+
     tdUrl.textContent = texto.url;
     tdName.textContent = texto.name; 
    
