@@ -1,11 +1,7 @@
 const API = 'https://swapi.dev/api/people/'
 
 function personaje(texto) { 
-    let div = document.createElement('div')
-    let h1_texto = document.createTextNode(texto.url+" ->> "+texto.name) 
-    div.appendChild(h1_texto)
-     
-
+    let div = document.createElement('div')  
 
     var table = document.createElement('table');
     var tr = document.createElement('tr');
@@ -19,12 +15,7 @@ function personaje(texto) {
    
     tr.appendChild(tdUrl);
     tr.appendChild(tdName); 
-    table.appendChild(tr);
-
-
-   /* let img = document.createElement('img')
-    img.src = texto.image
-    div.appendChild(img)*/
+    table.appendChild(tr); 
 
     let contenedor = document.getElementById('contenedor')
     contenedor.appendChild( table )
@@ -39,7 +30,7 @@ function obtener_personaje(id) {
 }
 
 let ids = []
-for (let i=1; i<=90; i++) {
+for (let i=1; i<=80; i++) {
     ids.push(i)
 }
 
